@@ -2,6 +2,10 @@ body {
     margin: 20px;
 }
 
+h2 {
+    text-align: left;
+}
+
 .wrapper{
     margin: 0 auto;
     width: 900px;
@@ -20,6 +24,12 @@ body {
     visibility: hidden;
 }
 
+.finish-section {
+    margin: 0 auto;
+    width: 900px;
+    visibility: hidden;
+}
+
 .myBtn {
     padding: 10px;
     margin: 10px;
@@ -33,3 +43,9 @@ body {
 button {
     background-color: darkmagenta!important;
 }
+
+
+
+@media only screen 
+and (min-width:320px) 
+and (max-width:540px)
