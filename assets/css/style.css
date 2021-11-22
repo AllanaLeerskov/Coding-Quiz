@@ -1,0 +1,35 @@
+body {
+    margin: 20px;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 900px;
+    text-align: center;
+}
+
+.finish-quiz {
+    margin: 0 auto;
+    width: 900px;
+    visibility: hidden;
+}
+
+.final-page {
+    margin: 0 auto;
+    width: 900px;
+    visibility: hidden;
+}
+
+.myBtn {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.em;
+    background-color: darkmagenta;
+}
+
+button {
+    background-color: darkmagenta!important;
+}
