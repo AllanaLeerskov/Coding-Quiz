@@ -6,8 +6,9 @@ var hElement = document.querySelector("#title");
 var finishDiv = document.querySelector(".finish-quiz");
 var initialInput = document.querySelector("#enterInitial").value;
 var submitEl = document.querySelector(".btn btn-primary mb-2");
+var responsDiv = document.querySelector("#response");
 var finaPageEl = document.querySelector(".final-page");
-var initialAndScore = document.querySelector("#initials");
+var initialAndScore = document.querySelector("#initial");
 var firstPageEl = document.querySelector(".first-page");
 
 
