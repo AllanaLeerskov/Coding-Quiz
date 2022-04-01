@@ -1,67 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <div class="first-page">
-        <!--questionnare page-->
-        <div class="row">
-            <div class="col-md-10 col-sm-6">
-                <h5 id="high-score">View Highscore</h5>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Code Quiz</title>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <a id= "score" href="highscore.html">View High Scores</a> 
+                <h2 id="timer"></h2>
             </div>
-        <div class="col-md-2 col-sm-6">
-            <h5 id="time">Time:0</h5>
-        </div>
-        </div>
-    <br>
-    <br>    
-    <div class="wrapper">
-        <div class="row">
-            <div class="col-md-10 col-sm-6">
-                <h2>Coding Quiz Challenge</h2>
-                <p>Answer as many questions within the timeframe. Keep in mind, wrong answers will deduct time from the timer.</p>
-                <button class="myBtn">Start Quiz</button>
+        </header>
+        <main class="container">
+            <div class="row" id= "intro">
+                <h2 class="start">Coding Quiz Challenge</h2>
+                <p id="rules">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                <button class="btnStart" id="startBtn" type="submit">Start Quiz!</button>
             </div>
-        </div>
-    </div>
-    <!--questions page-->
-    <div class="container">
-    </div>
-    <br>
-    <br>
-
-    <!--last page-->
-    <div class="finish-quiz">
-        <h3>All Done!</h3>
-    
-        <form class="form-inline">
-            <div class="form-group mb-2">
-                <h5 id="initials">Enter initials</h5>
+            <div id= "quiz">
+                <div id= "question"></div>
+                    <div id= "choices">
+                        <ul>
+                            <li><button type="button" class="choice option-1 choice-button" id="1" onclick="checkAnswer('1')"></button></li>
+                            <li><button type="button" class="choice option-2 choice-button" id="2" onclick="checkAnswer('2')"></button></li>
+                            <li><button type="button" class="choice option-3 choice-button" id="3" onclick="checkAnswer('3')"></button></li>
+                            <li><button type="button" class="choice option-4 choice-button" id="4" onclick="checkAnswer('4')"></button></li>
+                        </ul>
+                    </div>
+                <div id="answerOutput"> </div>
             </div>
-            <div class="form-group mx-sm-3 mb-2">
-                <input type="text" class="form-control" id="enterInitial" placeholder="Enter your initials">
+            <div id="finalScore">
+                <h2 id="endMessage">All done!</h2>
+                <div id="result"></div>
+                 <form >
+                    <div id="initials">
+                        <label for="users" id="name">Enter Initials:</label>
+                        <input type="text" id="contactInfo">
+                        <input type="button" id= "userInfo" class="submitBtn" onclick="location.href='highscore.html';" value="Submit" />
+                    </div>
+                </form>
             </div>
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
-        </form>
-    </div>
-
-    <div class="final-page">
-        <h2>High Scores</h2>
-        <div class="col-cm-10">
-            
-        </div>
-        
-    </div>
-    
-    </div>
-<script src="./assets/js/script.js"></script>
-<script src="./assets/js/time.js"></script>
-</body>
+        </main> 
+        <script src="./assets/js/highscore.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>
