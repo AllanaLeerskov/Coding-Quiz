@@ -11,7 +11,7 @@ A Javascript quiz to enhance coding studies.
 ## Website
 https://allanaleerskov.github.io/Coding-Quiz/
 
-![Webpage Snapshot](/assets/images/snapshot.png)
+![Webpage Snapshot](assets/images/screenshot.png)
 
 ## Contribution
 Made with ❤️ by Allana
